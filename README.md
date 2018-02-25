@@ -5,30 +5,26 @@ This package contains launch files and configuration files for the magni robot.
 
 ## Launch files
 
-### magni_bringup core.launch
+### magni_bringup base.launch
 This brings up the essential nodes for communicating with the motor node, after launch, teleop_twist_keyboard should work.
 
 Generally you should not have to run this launch file directly.
-
-### magni_bringup base.launch
-
-Runs everything needed for teleop, including Robot Commander based teleop (no navigation) runs on robot boot. 
 
 ### magni_demos fiducial_follow.launch
 
 Runs everything for the fiducial follow demo. 
 
-### magni_demos simple_navigation.launch
+### magni_demos speech_control.launch
 
-Runs a simple fiducial based navigation demo using fiducials and move_basic. Controllable using Robot Commander.
+Runs everything for the robot commander demo, including fiducial based navigation. 
 
 ### magni_demos teleop.launch
 
-Deprecated, now aliased to magni_bringup base.launch
+Runs everything needed for teleop, including robot_commander based teleop (no navigation) runs on robot boot.
 
 ### magni_demos joystick.launch
 
-Deprecated, now aliased to magni_bringup base.launch
+Deprecated, now aliased to teleop.launch
 
 ### magni_description description.launch
 Internal launch file for making the URDF load and robot_state_publisher work.
